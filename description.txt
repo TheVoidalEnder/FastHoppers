@@ -1,1 +1,0 @@
-A lightweight Paper plugin to change global hopper speeds and transfer amounts. Features interactive clean GUIs, chat/command manual overrides, custom sound effects, and built-in permission nodes.
