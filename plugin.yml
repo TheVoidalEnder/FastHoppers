@@ -1,0 +1,25 @@
+name: FasterHoppers
+version: 1.0
+main: com.example.fasterhoppers.FasterHoppers
+api-version: 1.20
+commands:
+  hopperadmin:
+    description: Opens the administrative hub for global transmission vectors via GUI.
+    permission: fasthopper.gui
+    usage: /hopperadmin
+  fasthoppers:
+    description: Text command interface to force dynamic hopper settings manually.
+    permission: fasthopper.admin
+    usage: /fasthoppers <amount|ticks> <value>
+permissions:
+  fasthopper.gui:
+    description: Authorizes viewing configurations via dashboard interfaces.
+    default: op
+  fasthopper.admin:
+    description: Authorizes modification parameters to rewrite config data live.
+    default: op
+  fasthopper.*:
+    description: Total structural authority override map.
+    children:
+      fasthopper.gui: true
+      fasthopper.admin: true
